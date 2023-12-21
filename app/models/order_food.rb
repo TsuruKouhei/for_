@@ -1,4 +1,4 @@
 class OrderFood < ApplicationRecord
-  belongs_to :order
-  belongs_to :food
+  belongs_to :order, foreign_key: 'order_id'
+  belongs_to :food, foreign_key: 'food_id'
 end
